@@ -1,10 +1,10 @@
 fetch(
-	'https://www.reddit.com/r/wallstreetbets/hot/.json'
+	'https://thawing-anchorage-52506.herokuapp.com/https://dashboard.nbshare.io/api/v1/apps/reddit'
 )
 	.then(function(response){
 		return response.json();
 	})
 	.then(function(data){
-		console.log(data.data.children[1].data.title);
+		console.log(data);
 	});
-	
+

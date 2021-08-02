@@ -13,6 +13,13 @@
     height: 720px;
 }
 
+.button{
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
 footer{
     padding: 20px;
     background-color: darkgray;

@@ -10,7 +10,14 @@
 .container{
     background-color: darkgray;
     padding: 20px;
+    height: 720px;
+}
 
+.button{
+}
+
+.input {
+    margin-bottom: 20px;
 }
 
 footer{
@@ -24,4 +31,3 @@ footer{
     width: 100%;
     font-size: 28px;
 }
-

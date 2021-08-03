@@ -17,6 +17,20 @@ document.getElementById("input")
         //removeForecast();
 });
 
+var getTickers  = function() {
+    var redditTickers = document.querySelector("#redditBtn").value;
+
+    fetch("https://thawing-anchorage-52506.herokuapp.com/https://dashboard.nbshare.io/api/v1/apps/reddit")
+    .then(function(response) {
+        if (response.ok) {
+            console.log(response)
+        response.json().then(function(data) {
+            console.log(data)
+        })
+    };
+});
+};
+
 var getQuandl = function() {
     var tickerInputElement = document.querySelector("#input").value;
 

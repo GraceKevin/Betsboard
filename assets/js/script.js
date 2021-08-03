@@ -30,6 +30,7 @@ var getTickers  = function() {
 });
 };
 
+
 var getQuandl = function() {
     var tickerInputElement = document.querySelector("#input").value;
 

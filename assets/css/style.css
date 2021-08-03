@@ -13,7 +13,14 @@
     height: 720px;
 }
 
-.button{
+.ticker-heading{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tickerlist{
+    padding-left: 350px;
 }
 
 .input {

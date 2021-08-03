@@ -1,0 +1,33 @@
+.heading{
+    background-color: darkgray;
+    color: black;
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+} 
+
+.container{
+    background-color: darkgray;
+    padding: 20px;
+    height: 720px;
+}
+
+.button{
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+footer{
+    padding: 20px;
+    background-color: darkgray;
+    color: black;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 28px;
+}

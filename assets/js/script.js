@@ -13,3 +13,14 @@ function getTicker (){
 			}
 		});
 }
+
+	fetch(
+		'https://thawing-anchorage-52506.herokuapp.com/https://www.quandl.com/api/v3/datasets/WIKI/FB/data.json?'
+	)
+		.then(function(response){
+			return response.json();
+		})
+		.then(function(data){
+			
+			}
+		)

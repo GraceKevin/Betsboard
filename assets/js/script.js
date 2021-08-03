@@ -14,7 +14,6 @@ document.getElementById("input")
         if ( event.keyCode === 13) {
             document.getElementById("submitBtn").click();
         }
-        //removeForecast();
 });
 
 var getTickers  = function() {

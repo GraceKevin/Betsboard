@@ -30,13 +30,21 @@ var getTickers  = function() {
                     //stores top 10 tickers
                     var tickers = [data[i].ticker]
                     console.log(tickers)
-                    i++
+                    i++;
+                    //displays ticker list   
+                    tickers.forEach(function(ticker) {
+                        li = document.createElement('li');
+                        li.innerHTML = ticker;
+                        document.getElementById('ticker-list').appendChild(li);
+                    });
                 }
-        });
+            });
 }
+        
+        
 
 var getQuandl = function() {
-    var tickerInputElement = document.querySelector("#input").value;
+    var tickerInputElement = document.querySelector("#input").value.toUpperCase();
     var apiQuandl = "CUsBpcdJn44R3yo3aahR";
     
     fetch( 
@@ -53,8 +61,12 @@ var getQuandl = function() {
             .then(function(data) {
                 //stores closing price
                 var stockPrice = [data.dataset_data.data[0][4]]
-                console.log(stockPrice)
-                //displayTickers();
+                //displays name and price
+                stockPrice.forEach(function(price) {
+                    li = document.createElement('li');
+                    li.innerHTML = tickerInputElement + '&nbsp;' + "$" + price;
+                    document.getElementById('stock-price').appendChild(li);
+                });
                 
             });
 

@@ -67,6 +67,7 @@ var getQuandl = function() {
                 //displays name and price
                 stockPrice.forEach(function(price) {
                     var li = document.createElement('li');
+                    li.classList.add("li");
                     li.innerHTML = tickerInputElement + '&nbsp;' + "$" + price;
                     document.getElementById('stock-price').appendChild(li);
                     console.log(stockPrice);

@@ -10,6 +10,8 @@
   </head>
   <body> 
     <h1 class="heading">BetsBoard</h1>
+    <p class="explanation">Get started in the stock market by looking up any stocks ticker or check out what the top trending stocks on Reddit are. </p>
+     <p class="explanation"> The Reddit feed updates every 15 minutes.</p>
 
     <section class="container">
       <div class="tile is-ancestor">
@@ -19,19 +21,15 @@
               <form id="user-form"></form>
             <button onclick="getTickers()" class="button is-primary is-rounded is-align-items-center" id="redditBtn">Get Tickers</button>
 
-            <input type="text" class="input is-link" id="">
-            <button class="button is-primary is-rounded is-align-items-center">Submit Button</button>
-
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
 
-            <p class="title"></p>
-            <div class="test" id="tested"></div>
-
-            <p class="title">Two</p>
-
+            <div class="test" id="tested">
+              <p class="title">Top 10 stocks</p>
+              <ol id="ticker-list"></ol>
+            </div>
           </div>
         </div>
       </div>
@@ -42,14 +40,15 @@
             <input type="text" class="input is-link" id="input">
             <button data-input="input" onclick="getQuandl()" class="button is-primary is-rounded is-align-items-center" id="submitBtn">Submit Button</button>
 
-            <input type="text" class="input is-link" id="">
-            <button class="button is-primary is-rounded is-align-items-center">Submit Button</button>
-
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
-            <p class="title">Two</p>
+
+            <div class="test" id="tested">
+            <p class="title">Stock Price</p>
+            <ul id="stock-price"></ul>
+            </div>
           </div>
         </div>
       </div>

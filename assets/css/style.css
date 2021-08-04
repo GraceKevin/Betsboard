@@ -1,33 +1,82 @@
+
+
 .heading{
-    background-color: darkgray;
+    background-color: darkgreen;
     color: black;
     padding: 40px;
-    font-size: 30px;
+    font-size: 48px;
     text-align: center;
     margin-bottom: 20px;
+    font-weight: 400;
 } 
 
+.explanation {
+    margin: 10px 10px ;
+    text-align: center;
+    text-shadow: 0 0 7px rgba(0, 0, 0, .5);
+}
+
 .container{
-    background-color: darkgray;
     padding: 20px;
     height: 720px;
 }
 
-.button{
+.tile {
+    border: 2px black;
+    border-radius: 10%;
+}
+
+#submitBtn,
+#redditBtn{
+    background-color: darkgreen;
+    box-shadow: 5px 5px rgb(4, 68, 4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+#submitBtn:hover,
+#redditBtn:hover {
+    background-color: rgb(1, 53, 1);
+    box-shadow: darkseagreen;
 }
 
 .input {
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 footer{
-    padding: 20px;
-    background-color: darkgray;
+    padding: 5px;
     color: black;
     text-align: center;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    font-size: 28px;
+    font-size: 12px;
+}
+
+.li {
+    margin: 15px 15px;
+    padding: 5px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    float: left;
+    width: 100px;
+}
+
+/*@media screen (max-width: 1200px) {
+    header {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+    }
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen (max-width: 576px) {
+    .btn {
+        width: 25%;
+    }
+    
 }

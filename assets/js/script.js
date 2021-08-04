@@ -78,5 +78,5 @@ var getQuandl = function() {
 
 }
 
-
+// In order to have commit
 // Adding lines in order to create pull request

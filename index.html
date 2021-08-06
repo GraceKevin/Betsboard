@@ -32,23 +32,32 @@
       </div>
       <div class="tile is-ancestor quandl-tile">
         <div class="tile is-child box">
-          
-          <p class="title">Stock Price</p>
-          <ul id="stock-price"></ul>
+          <p class="title">Ticker Information </p>
+          <div class="table-container hide">
+          <table class="table is-bordered is-striped is-hoverable">
+            <thead>
+              <th>Date</th>
+              <th>Open Price</th>
+              <th>Highest Price</th>
+              <th>Lowest Price</th>
+              <th>Close Price</th>
+            </thead>
+            <tbody>
+              <td id="date"></td>
+              <td id="open"></td>
+              <td id="high"></td>
+              <td id="low"></td>
+              <td id="close"></td>
+            </tbody>
+          </table>
+          </div>
           <input type="text" class="input is-link" id="input">
-          <button data-input="input" onclick="getQuandl()" class="button is-primary is-rounded is-align-items-center" id="submitBtn">Submit Button</button>
+            <div class="btn-container">
+            <button data-input="input" onclick="getQuandl()" class="button is-primary is-rounded is-align-items-center" id="submitBtn">Submit Button</button>
+          </div>
         </div>
       </div>
     </section>
-    
-    
-    
-    <footer>
-    </footer>
-
-
     <script src="./assets/js/script.js"></script>
-
-
   </body>
 </html>

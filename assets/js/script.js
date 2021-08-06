@@ -63,17 +63,29 @@ var getQuandl = function() {
             .then(function(data) {
                 //stores closing price
                 console.log(data.dataset_data);
-                var stockPrice = [data.dataset_data.data[0][4]]
-                var stockOpen = [data.dataset_data.data[0][1]]
-                //displays name and price
-                stockPrice.forEach(function(price) {
-                    var li = document.createElement('li');
-                    li.classList.add("li");
-                    li.innerHTML = tickerInputElement + '&nbsp;' + "$" + price;
-                    document.getElementById('stock-price').appendChild(li);
-                    console.log(stockPrice);
-                    console.log(stockOpen);
-                });
+                var stockClose = [data.dataset_data.data[0][4]];
+                var stockOpen = [data.dataset_data.data[0][1]];
+                var stockDate = [data.dataset_data.data[0][0]];
+                var stockHigh = [data.dataset_data.data[0][2]];
+                var stockLow = [data.dataset_data.data[0][3]];
+               
+                var hideTable = document.querySelector('.table-container');
+                hideTable.classList.remove('hide');
+
+                var tableDate = document.querySelector("#date");
+                tableDate.textContent = stockDate;
+
+                var tableOpen = document.querySelector("#open");
+                tableOpen.textContent = stockOpen;
+
+                var tableHigh = document.querySelector("#high");
+                tableHigh.textContent = stockHigh;
+
+                var tableLow = document.querySelector("#low");
+                tableLow.textContent = stockLow;
+
+                var tableClose = document.querySelector("#close");
+                tableClose.textContent = stockClose;
                 
             });
 

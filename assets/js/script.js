@@ -54,7 +54,7 @@ var getQuandl = function() {
             .then(function(response) {
                 if (response.ok) {
                     return response.json();
-                    //console.log(response);
+                    console.log(response);
                 }
                 else {
                     alert("Error, please submit a valid ticker");
@@ -62,8 +62,9 @@ var getQuandl = function() {
             })
             .then(function(data) {
                 //stores closing price
+                console.log(data.dataset_data);
                 var stockPrice = [data.dataset_data.data[0][4]]
-               // var stockOpen = [data.dataset_data.data[0][1]]
+                var stockOpen = [data.dataset_data.data[0][1]]
                 //displays name and price
                 stockPrice.forEach(function(price) {
                     var li = document.createElement('li');
@@ -71,7 +72,7 @@ var getQuandl = function() {
                     li.innerHTML = tickerInputElement + '&nbsp;' + "$" + price;
                     document.getElementById('stock-price').appendChild(li);
                     console.log(stockPrice);
-                    //console.log(stockOpen);
+                    console.log(stockOpen);
                 });
                 
             });

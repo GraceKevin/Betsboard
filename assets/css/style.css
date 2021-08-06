@@ -1,29 +1,59 @@
+body {
+    margin: 0;
+    background-color:darkgreen;
+}
 
+.hero-img {
+    background-image: url("https://www.nasdaq.com/sites/acquia.prod/files/image/29525db076bcc42505a356e55dbe94f38b28530b_getty-stock-market-data.jpg?1372565570");
+    height: 50vh;
+    width: 100vw;
+}
 
-.heading{
-    background-color: darkgreen;
-    color: black;
-    padding: 40px;
-    font-size: 48px;
+.hero-text{
+    color: white;
+    font-size: 3.5rem;
+    text-align: right;
+    padding-top: 200px;
+    padding-right: 250px;
+}
+
+.instructions{
+    font-size: 26px;
     text-align: center;
-    margin-bottom: 20px;
-    font-weight: 400;
-} 
-
-.explanation {
-    margin: 10px 10px ;
-    text-align: center;
-    text-shadow: 0 0 7px rgba(0, 0, 0, .5);
 }
 
 .container{
+    background-color:rgb(1, 53, 1);
+    color: white;
     padding: 20px;
     height: 720px;
 }
+.reddit-tile{
+    padding: 30px;
+}
 
-.tile {
-    border: 2px black;
-    border-radius: 10%;
+.quandl-tile{
+    padding: 30px;
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.ticker-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 
 #submitBtn,
@@ -44,22 +74,10 @@
     text-transform: uppercase;
 }
 
-footer{
-    padding: 5px;
-    color: black;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-}
-
 .li {
-    margin: 15px 15px;
-    padding: 5px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    float: left;
+    padding: 10px;
     width: 100px;
+    float: left;
 }
 
 /*@media screen (max-width: 1200px) {

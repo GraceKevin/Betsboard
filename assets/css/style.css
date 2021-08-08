@@ -1,5 +1,6 @@
 body {
     background-color: darkgreen;
+
     margin: 0;
     padding: 0;
     height: 100%;
@@ -16,6 +17,7 @@ body {
 .image {
     flex-basis: 10%;
 }
+
 
 .img-header{
     height: 100px;
@@ -146,6 +148,7 @@ body {
     font-size: medium;
 }
 
+
 @media screen (max-width: 980px) {
    
 }
@@ -153,7 +156,6 @@ body {
 @media screen (max-width: 768px) {
    
 }
-
 @media screen (max-width: 575px) {
     
     

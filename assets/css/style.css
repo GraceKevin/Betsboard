@@ -1,29 +1,62 @@
-
-
-.heading{
+body {
     background-color: darkgreen;
-    color: black;
-    padding: 40px;
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 400;
-} 
+}
 
-.explanation {
-    margin: 10px 10px ;
-    text-align: center;
-    text-shadow: 0 0 7px rgba(0, 0, 0, .5);
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    flex-basis: 10%;
+}
+
+.img-header{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.heading {
+    font-size: 36px;
+    color: white;
 }
 
 .container{
+    background-image: url("https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F505490%2Fgetty-stock-market-data.jpg&w=1200&op=resize");
     padding: 20px;
     height: 720px;
 }
 
-.tile {
-    border: 2px black;
-    border-radius: 10%;
+.heading-text{
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+.reddit-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reddit-ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ticker-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reddit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 #submitBtn,
@@ -44,39 +77,44 @@
     text-transform: uppercase;
 }
 
-footer{
-    padding: 5px;
-    color: black;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-}
-
 .li {
     margin: 15px 15px;
     padding: 5px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    float: left;
-    width: 100px;
 }
 
-/*@media screen (max-width: 1200px) {
-    header {
-        padding: 0;
-        justify-content: center;
-        position: relative;
-    }
-    .container {
-        width: 100%;
-        text-align: center;
-    }
+.quandl-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
-@media screen (max-width: 576px) {
-    .btn {
-        width: 25%;
-    }
+.quandl-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.quandl-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen (max-width: 980px) {
+   
+}
+
+@media screen (max-width: 768px) {
+   
+}
+
+@media screen (max-width: 575px) {
+    
     
 }

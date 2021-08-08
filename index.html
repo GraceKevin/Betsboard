@@ -8,61 +8,66 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
-  <body> 
-    <h1 class="heading">BetsBoard</h1>
-    <p class="explanation">Get started in the stock market by looking up any stocks ticker or check out what the top trending stocks on Reddit are. </p>
-     <p class="explanation"> The Reddit feed updates every 15 minutes.</p>
+  <body>
+    <div class="container-header">
+      <div class="image">
+        <img class="img-header" src="assets/images/wallstreetbetslogo.jpg">
+      </div>
+      <div class="heading">
+        <h1>BetsBoard</h1>
+      </div>
+    </div>
 
     <section class="container">
-      <div class="tile is-ancestor">
-        <div class="tile is-4 is-vertical is-parent">
-          <div class="tile is-child box">
-
-              <form id="user-form"></form>
-            <button onclick="getTickers()" class="button is-primary is-rounded is-align-items-center" id="redditBtn">Get Tickers</button>
-
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-
-            <div class="test" id="tested">
-              <p class="title">Top 10 stocks</p>
-              <ol id="ticker-list"></ol>
-            </div>
-          </div>
-        </div>
+      <div class="heading-text">
+        <p>Get started in the stock market by looking up Reddit's top 10 tickers. Then
+          look up additional information about any Ticker of your choice.
+        </p>
       </div>
       <div class="tile is-ancestor">
-        <div class="tile is-4 is-vertical is-parent">
-          <div class="tile is-child box">
-
-            <input type="text" class="input is-link" id="input">
-            <button data-input="input" onclick="getQuandl()" class="button is-primary is-rounded is-align-items-center" id="submitBtn">Submit Button</button>
-
-          </div>
+        <div class="tile is-vertical is-parent is-12">
+      <div class="tile is-child box">
+        <div class="reddit-head">
+          <p class="title">Top 10 stocks</p>
         </div>
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-
-            <div class="test" id="tested">
-            <p class="title">Stock Price</p>
-            <ul id="stock-price"></ul>
-            </div>
-          </div>
+        <div class="reddit-ol">
+          <ol id="ticker-list"></ol>
         </div>
+        <div class="reddit-btn">
+          <button onclick="getTickers()" class="button is-primary is-rounded is-align-items-center" id="redditBtn">Get Tickers</button>
+        </div>        
       </div>
+
+      <div class="tile is-child box is-info">
+        <div class="quandl-head">
+          <p class="title">Stock Price</p>
+        </div>
+        <div class="quandl-table hide">
+          <table class="table is-bordered is-striped is-hoverable">
+            <thead>
+              <th>Date</th>
+              <th>Open</th>
+              <th>High</th>
+              <th>Low</th>
+              <th>Close</th>
+            </thead>
+            <tbody>
+              <td id="date"></td>
+              <td id="open"></td>
+              <td id="high"></td>
+              <td id="low"></td>
+              <td id="close"></td>
+            </tbody>
+          </table>
+        </div>
+        
+        <input type="text" class="input is-link" id="input">
+        <div class="quandl-btn">
+          <button data-input="input" onclick="getQuandl()" class="button is-primary is-rounded is-align-items-center" id="submitBtn">Submit Button</button>
+        </div>
+      </div></div></div>
     </section>
-    
-    
-    
-    <footer>
-      <p>Project Created By: Kevin Grace, Will Howard, Gabriel Perez, and Ian Cohen</p>
-    </footer>
-
 
     <script src="./assets/js/script.js"></script>
-
-
   </body>
 </html>

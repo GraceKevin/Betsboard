@@ -9,4 +9,4 @@
 ### Preview of the page 
 ![](./assets/images/BetsBoard.gif)
 
-:link: [Website](https://gracekevin.github.io/project-1/)
+:link: [Website](https://gracekevin.github.io/Betsboard/)

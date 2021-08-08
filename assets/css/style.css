@@ -1,5 +1,11 @@
 body {
     background-color: darkgreen;
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-header{
@@ -12,33 +18,62 @@ body {
     flex-basis: 10%;
 }
 
+
 .img-header{
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
 }
 
 .heading {
     font-size: 36px;
     color: white;
+    padding: 5px;
 }
 
 .container{
+    display: block;
+    position: relative;
+    padding-bottom: 150px;
+    justify-content: center;
+}
+
+.container::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
     background-image: url("https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F505490%2Fgetty-stock-market-data.jpg&w=1200&op=resize");
-    padding: 20px;
-    height: 720px;
+    opacity: .50;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: 100%;
+}
+
+.tile {
+    opacity: 1.0;
+    position: relative;
 }
 
 .heading-text{
     color: white;
     text-align: center;
     font-size: 26px;
+    position: relative;
 }
 
 .reddit-head {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1.0;
+    position: relative;
 }
 
 .reddit-ol {
@@ -106,6 +141,14 @@ body {
     align-items: center;
 }
 
+.ending {
+    margin: 0;
+    padding: 15px;
+    color: whitesmoke;
+    font-size: medium;
+}
+
+
 @media screen (max-width: 980px) {
    
 }
@@ -113,7 +156,6 @@ body {
 @media screen (max-width: 768px) {
    
 }
-
 @media screen (max-width: 575px) {
     
     

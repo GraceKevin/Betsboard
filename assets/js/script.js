@@ -61,12 +61,13 @@ var getQuandl = function() {
                 }
             })
             .then(function(data) {
+                //console.log(data.dataset_data);
                 
                 var stockClose = [data.dataset_data.data[0][4]];
                 var stockDate = [data.dataset_data.data[0][0]];
                 var stockHigh = [data.dataset_data.data[0][2]];
-                var stockLow = [data.dataset_data.data[0][1]];
-                var stockOpen = [data.dataset_data.data[0][3]];
+                var stockLow = [data.dataset_data.data[0][3]];
+                var stockOpen = [data.dataset_data.data[0][1]];
 
                 var hideTable = document.querySelector('.quandl-table');
                 hideTable.classList.remove('hide');

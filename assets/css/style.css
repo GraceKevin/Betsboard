@@ -106,11 +106,15 @@ body {
     align-items: center;
 }
 
-@media screen (max-width: 1200px) {
+@media screen (max-width: 980px) {
    
 }
 
-@media screen (max-width: 576px) {
+@media screen (max-width: 768px) {
+   
+}
+
+@media screen (max-width: 575px) {
     
     
 }

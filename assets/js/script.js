@@ -5,6 +5,7 @@
 
 //var redditFormElement = document.querySelector("#user-form");
 //var redditContainerElement = document.querySelectorI("#tested");
+// Update README
 
 document.getElementById("input")
     .addEventListener("keyup", function(event) {
